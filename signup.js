@@ -20,7 +20,7 @@ export class Signup extends Component {
     }else if(reg.test(this.state.email) == true){
          Alert.alert('Email is correct');
     }
-    
+
     if(password !== confirm_password){
       Alert.alert('Your confirm password does not match!')
     }else if (password == confirm_password){
@@ -55,7 +55,7 @@ export class Signup extends Component {
         />
         
         <Button
-          title={'Login'}
+          title={'Register'}
           style={styles.input}
           onPress={this.onLogin.bind(this)}
         />
